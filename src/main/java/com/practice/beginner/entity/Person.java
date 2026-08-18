@@ -11,6 +11,8 @@ import java.time.LocalDate;
 public class Person extends Base{
     private String firstname;
     private String lastname;
+    private String sex;
+    private Integer age;
     private LocalDate birthdate;
 
 }

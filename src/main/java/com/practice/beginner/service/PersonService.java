@@ -9,10 +9,11 @@ import java.util.Optional;
 
 @Service
 
-public class PersonService implements BeginnerService<Person, String> {
+public class PersonService implements GenericService<Person, String> {
     private final PersonRepository personrepository;
 
     public PersonService(PersonRepository personRepository){
+
         this.personrepository = personRepository;
     }
 
@@ -30,6 +31,7 @@ public class PersonService implements BeginnerService<Person, String> {
 
     @Override
     public List<Person> findMany() {
+
         return personrepository.findAll();
     }
 
