@@ -31,7 +31,6 @@ public class PersonService implements GenericService<Person, String> {
 
     @Override
     public List<Person> findMany() {
-
         return personrepository.findAll();
     }
 
